@@ -15,16 +15,30 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "bundleIdentifier": "com.valentimcanejo.chamerapidototem"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.valentimcanejo.chamerapidototem",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "69291788-a9bd-4793-bf23-6f3ce84ab7c8"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/69291788-a9bd-4793-bf23-6f3ce84ab7c8"
     }
   }
 }
