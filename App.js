@@ -69,7 +69,7 @@ export default function App() {
 
   const printAPI = async () => {
     try {
-      const result = await fetch(`http://192.168.2.20:3333/print?html=${html}`);
+      const result = await fetch(`http://192.168.2.33:3333/print?html=${html}`);
 
       const jsonObject = result.json();
       console.log(jsonObject);
@@ -105,8 +105,8 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.container}>
         {/* <Button title="Print" onPress={print} /> */}
-        <Text>IP Pedro: {`http://192.168.2.20:3333/print?html=${html}`}</Text>
-        <Text>IP Rômulo: {`http://192.168.0.17:3333/print?html=${html}`}</Text>
+        <Text>IP Pedro: {`http://192.168.2.33:3333`}</Text>
+        <Text>IP Rômulo: {`http://192.168.0.17:3333`}</Text>
         <View style={styles.spacer} />
         <Button
           title="Print IP Pedro"
